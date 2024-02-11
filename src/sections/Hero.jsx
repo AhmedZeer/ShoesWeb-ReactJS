@@ -1,7 +1,8 @@
 import { bigShoe1 } from "../assets/images"
-import { statistics } from "../../constants"
+import { statistics, shoes} from "../../constants"
 import {arrowRight} from "../assets/icons"
 import Button from "../components/Button"
+import ShoeCard from "../components/ShoeCard"
 
 const Hero = () => {
   return (
@@ -21,7 +22,7 @@ const Hero = () => {
           <span
           className="xl:bg-white
           xl:whitespace-nowrap
-          relative z-5 pr-10"
+          relative z-10 pr-10"
           >check out this shoe</span>
           <br/>
           <span 
@@ -39,20 +40,17 @@ const Hero = () => {
         </p>
         <Button label = "Show Now"
         iconURL = {arrowRight}/>
-        <div className="flex justify-starts items-start
+        <div  className="flex justify-starts items-start
                         flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat,index) => (
             <div>
-              <p className="text-4xl font-palanquin
+              <p key={stat.value} className="text-4xl font-palanquin
                   font-bold">{stat.value}</p>
-              <p className="leading-7 font-montserrat
+              <p key={stat.label} className="leading-7 font-montserrat
                text-slate-gray font-light">{stat.label}</p>
             </div>
           ))}
         </div>
-        <h1>hello</h1>
-        <h1>hello</h1>
-        <h1>hello</h1>
       </div>
       <div className="flex relative
       items-center flex-1 justify-center
@@ -63,8 +61,21 @@ const Hero = () => {
           alt = "showimage"
           width={610}
           height={500}
-          z-10
+          z-10 
         />
+        <div>
+          {shoes.map((shoe)=>
+          (
+            <div key={shoe}>
+              <ShoeCard
+                imageURL = {shoe}
+                changeBigShowImage=
+                {()=>{}}
+                bigShowImage = ""
+              />
+            </div>  
+          ))}
+        </div>
       </div>
     </section>
   )
