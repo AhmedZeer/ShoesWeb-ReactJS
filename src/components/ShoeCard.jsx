@@ -5,11 +5,19 @@ function ShoeCard({imgURL, changeBigShowImage, bigShowImage}) {
     }
   }
   return (
-    <div className={`border-2 rounded-xl ${bigShowImage === imgURL ? 'border-color-red':'border-transparent cursor-pointer max-sm:flex-1'}`}
+    <div className={`border-2 rounded-xl ${bigShowImage === imgURL.bigShoe ? 'border-red-500':'border-transparent cursor-pointer max-sm:flex-1'}`}
     onClick={handleClick}>
+      <div className="flex justify-center items-center
+      bg-card bg-center bg-cover sm:h-40 sm:w-40
+      rounded-xl max-sm:p-2">
+        <img src={imgURL.thumbnail}
+            alt="shoe"
+            height={127}
+            width={103}
+            className="object-contain"
 
-        hello
-
+        />
+      </div>
     </div>
   )
 }
