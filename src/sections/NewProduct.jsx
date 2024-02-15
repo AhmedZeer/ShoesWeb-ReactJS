@@ -27,8 +27,8 @@ const NewProduct = () => {
                           items-center">
             <img src={shoe8}
                   alt="shoe"
-                  width={570}
-                  height={522}
+                  width={427}
+                  height={391}
                   className="object-contain"
             />
           </div>

@@ -10,14 +10,13 @@ const Hero = () => {
   return (
     <section
       id = "home"
-      className="w-full border-2
+      className="w-full 
      flex xl:flex-row flex-col
      justify-center min-h-screen
-     gap-10 max-container">
+     gap-0 max-container">
       <div className="relative xl:w-2/5 flex flex-col
       justify-center items-start
-      w-full max-xl:padding-x pt-28">
-        <p>Our Summer Collection</p>
+      w-full max-xl:padding-x ">
         <h1 className="mt-10 font-palanquin font-bold
                       text-8xl max-sm:text-[50px]
                       max-sm:leading-[1]">
@@ -65,7 +64,7 @@ const Hero = () => {
           height={500}
         />
         <div className="flex flex-1 sm:gap-2 absolute
-                        -bottom-[5%] sm:left-[10%] max-sm:px-6">
+                        -bottom-[5%] sm:left-[23%] max-sm:px-6">
           {shoes.map((shoe,i)=>
           (
             <div key={i}>
