@@ -10,7 +10,9 @@ import Nav from "./components/nav.jsx"
 
 const App = () => (
   <main className = "relevant">
+
     <Nav />
+
     <section className = "xl: padding-1 wide:padding-r padding-b">
       <Hero />
     </section>
