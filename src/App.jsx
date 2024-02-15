@@ -9,7 +9,7 @@ import Reviews from "./sections/Reviews.jsx"
 import Nav from "./components/nav.jsx"
 
 const App = () => (
-  <main className = "relevant">
+  <main className = "relevant bg-slate-950	">
 
     <Nav />
 
